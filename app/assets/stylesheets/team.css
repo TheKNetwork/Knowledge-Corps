@@ -1,0 +1,79 @@
+.team-main {
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:hidden;
+}
+
+.peter-cooperman {
+    width: 800px;
+    height: 600px;
+    padding-bottom: 20px;
+}
+
+.harsh-patel {
+    width: 800px;
+    height: 830px;
+    padding-bottom: 80px;
+}
+
+.team-header{
+    font-weight:bold;
+    font-size:18px;
+    margin-bottom:0;
+    padding-bottom:0;
+}
+
+.team-header span {
+    color: #95BD17;
+}
+
+.team-leftside {
+    width:400px;
+    float:left;
+}
+
+.team-leftside a {
+    text-decoration:none;
+}
+
+.team-rightside {
+    width:400px;
+    float:left;
+}
+
+.team-rightside p {
+    margin-top: 0px;
+}
+
+.team-rightside a {
+    color: #232E3D;
+
+}
+
+.cursive_text {
+    color:#8DB339;
+    font-family:cursive;
+}
+
+.links {
+    margin-top:15px;
+}
+
+a.email-button {
+    padding-top:2px;
+    padding-bottom:3px;
+    float:right;
+    margin-right:20px;
+    width:150px;
+    height:25px;
+    background-color:#00A4B3;
+    text-align:center;
+    font-size:20px;
+    display: inline-block;
+    color:white;
+}
+
+a:hover {
+    opacity:.7;
+}

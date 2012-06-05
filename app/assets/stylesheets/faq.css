@@ -1,0 +1,71 @@
+.faq-body {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+.faq-body a {
+	text-decoration: none;
+	color: #8DB339;
+}
+
+.faq-body span {
+	color: #95BD17;
+}
+
+.faq-header {
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+.faq-leftside {
+	width: 380px;
+	float: left;
+	padding-right: 20px;
+}
+
+.faq-leftside p {
+	margin-top: 0px;
+}
+
+.faq-rightside {
+	width: 400px;
+	float: left;
+}
+
+.faq-rightside p {
+	margin-top: 0px;
+}
+
+.faq-donations {
+	width: 800px;
+	display: none;
+}
+
+.faq-projects {
+	width: 800px;
+	display: none;
+}
+
+.faq-support {
+	width: 800px;
+	display: none;
+}
+
+.faq-interested {
+	width: 800px;
+	display: none;
+}
+
+.expander {
+	cursor: pointer;
+}
+
+.clear {
+	clear: both;
+}
+
+.show {
+	display: block;
+}

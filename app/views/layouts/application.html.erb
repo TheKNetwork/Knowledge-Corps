@@ -1,0 +1,45 @@
+<div id="comments">
+  <div id="close_button">&nbsp;</div>
+  <form id="user_input_comment" action="<%= feedback_path %>" method="POST">
+    <label>Name: </label> <br />
+    <input type="text"  name="email[name]"/><br />
+    <label>Email: </label> <br />
+    <input type="text"  name="email[email]"/><br />
+    <label>Comments: </label> <br />
+    <textarea rows="4" cols="30" name="email[comment]"></textarea><br />
+    <input type="submit" value="Submit" id="submit"/>
+  </form>
+</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>K-NetworkDonations</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="container">
+    <div class="header">
+      <a href="/team" class="team <%= 'active' if params[:action] == "team"%>">TEAM</a>
+      <a href="/donations" class="donations <%= 'active' if params[:action] == "index"%>">HOME</a>
+      <a href="/about" class="about <%= 'active' if params[:action] == "about"%>">ABOUT</a>
+      <a href="/faq" class="faq <%= 'active' if params[:action] == "faq"%>">FAQ</a>
+    </div>
+
+    <p class="slogan"> <span>EMPOWERING YOU</span> TO BRING INNOVATION TO YOUR SCHOOL </p> 
+
+    <div id="content">
+      <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="comments">
+        <p><span>Questions,comments & suggestions</span> to help make this site better
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

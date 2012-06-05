@@ -1,0 +1,31 @@
+<h1>Editing donation</h1>
+
+<%= form_for(@donation) do |f| %>
+  <% if @donation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@donation.errors.count, "error") %> prohibited this donation from being saved:</h2>
+
+      <ul>
+      <% @donation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+<%= link_to 'Show', @donation %> |
+<%= link_to 'Back', donations_path %>

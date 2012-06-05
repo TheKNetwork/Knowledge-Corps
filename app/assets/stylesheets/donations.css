@@ -1,0 +1,174 @@
+
+.main_body {
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
+  overflow:hidden;
+}
+
+.main_left_header {
+  font-weight:bold;
+  width: 400px;
+  font-size:16px;
+  margin-bottom:0;
+  padding-bottom:0;
+}
+
+.main_left_header span {
+  color: #95BD17;
+}
+
+.main_leftside {
+  width:400px;
+  float:left;
+}
+
+.main_rightside {
+  width:400px;
+  float:left;
+  position: relative;
+  top: 100px;
+}
+
+.main_left_body {
+  font-size: 18px;
+}
+
+.location {
+  float: left;
+  padding-right: 20px;
+  width: 120px;
+}
+
+.city {
+  float: left;
+  width: 200px;
+}
+
+#donation_user_city {
+  height: 30px;
+  width: 190px;
+}
+
+.donate {
+  font-size: 30px;
+  color: #283241;
+  float: left;
+  padding-top: 10px;
+  padding-right: 30px;
+}
+
+.donate_button {
+  padding-top: 7px;
+  float: left;
+  height: 50px;
+  text-decoration: none;
+  background-color: #00A4B3;
+  text-align: center;
+  font-size: 35px;
+  display: inline-block;
+  color: white;
+}
+
+.actionFAQ {
+  width: 400px;
+  height: 50px;
+  margin-left: 24px;
+  margin-right: auto;
+}
+
+.actions {
+  width: 210px;
+  height: 50px;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+
+.actions:hover {
+  opacity:.7;
+}
+
+.field {
+  width:400px;
+  height: 50px;
+  font-size:30px;
+  margin-left:24px;
+  margin-right:auto;
+}
+
+.faq-link {
+  float: left;
+  width: 160px;
+}
+
+.faq-link a {
+  color: grey;
+}
+
+.faq-link p {
+  color: grey;
+}
+
+.faq-link span {
+  color: black;
+}
+
+.explanation {
+  color: grey;
+  padding-left: 15px;
+  padding-right: 30px;
+  padding-top: 40px;
+  text-align: center;
+}
+.graph {
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
+  overflow:hidden;
+  padding-bottom: 50px;
+}
+
+.above-graph {
+  color: grey;
+  padding-bottom: 10px;
+  padding-top: 40px;
+}
+
+.above-graph span {
+  color: black;
+}
+
+#position {
+  float:left;
+  width:50px;
+}
+
+#position p {
+  margin: 1px;
+}
+
+#amount {
+  float:left;
+  width:70px;
+}
+
+#amount p {
+  margin: 1px;
+}
+
+#cities {
+  float:left;
+  width:180px;
+}
+
+#cities p {
+  margin: 1px;
+}
+
+#chart_place {
+  float:left;
+  width:500px;
+  margin-top:3.5px;
+}
