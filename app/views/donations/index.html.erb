@@ -1,0 +1,68 @@
+
+<%= content_tag "div", "", {:id => "donations", :data => { :donation => @top_donations.to_json }} %>
+
+<div class="main_body">
+  <div class="main_leftside">
+    <p class="main_left_header">
+        DELIVERING A FREE WORLD CLASS EDUCATION -<span> TO YOUR COMMUNITY</span>
+    </p><hr />
+    <p class="main_left_body">
+      Your donation shows “money where your mouth is” 
+      support for bringing Khan Academy to a specific 
+      location – We keep track of location-based 
+      supporter totals
+      <br /><br />
+      The more supporters a location has, the more 
+      evidence (and resources) local volunteers and local 
+      champions will have indicating that local schools 
+      and school systems should incorporate Khan 
+      Academy into the curriculum.
+    </p>
+
+  </div>
+  <div class="main_rightside">
+    <%= form_for(@donation_user) do |f| %>
+      <div class="field">
+        <div class="location">
+          <%= f.label :location %>
+        </div>
+        <div class="city">
+          <%= f.text_field :city %>
+        </div>
+      </div>
+      <div class="actionFAQ">
+        <div class="actions">
+          <div class="donate">Donate</div>
+            <%= f.submit :class => "donate_button", :value => "$5"%>
+          </div>
+        
+        <div class="faq-link">
+          <p>why only<span> $5</span>. <%=link_to "Find Out", faq_path(:donations => true) + "#donations" %></p>
+        </div>
+      </div>      
+    <% end %>
+
+    <p class="explanation">
+      Your donation goes directly to Khan Academy, a 
+      tax-exempt 501(C)3 nonprot organization (TAX ID 
+      Number: 26-1544963). Your gift is tax-deductible.
+    </p>
+  </div>
+</div>
+
+<%= stylesheet_link_tag "donations.css" %>
+
+<div class="graph">
+  <p class="above-graph"> Project #1 efforts is to 
+  <span> bring Khan Academy into the classroom </span> (100% free for all users)
+  </p>
+  <h3>LEADERBOARD FOR COMMUNITY SUPPORT</h3><hr />
+  <div id="position">
+  </div>
+  <div id="cities">
+  </div>
+  <div id="amount">
+  </div>
+  <div id="chart_place">
+  </div>
+</div>

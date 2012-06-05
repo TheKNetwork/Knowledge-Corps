@@ -1,0 +1,15 @@
+class PaymentNotification < ActiveRecord::Base
+  attr_accessible :donation_user_id, :params, :status
+  belongs_to :donation_user
+  serialize :params
+  after_create :mark_donation_as_complete
+
+  private
+
+  def mark_donation_as_complete
+    if status == "Completed"
+      self.donation_user.update_attribute(:is_valid, true)
+      self.donation_user.donation.update_attribute(:amount, self.donation_user.donation.amount + 5)
+    end
+  end
+end

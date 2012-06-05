@@ -1,0 +1,208 @@
+<%= stylesheet_link_tag "faq.css" %>
+<div class="faq-body">
+	<a name="donations">&nbsp;</a>
+	<% if params[:donations] != nil then %>
+		<p class="faq-header">FAQ on<span> Donations</span><span class="expander" id="expand-donations"> [-] </span></p>
+	<% else %>
+		<p class="faq-header">FAQ on<span> Donations</span><span class="expander" id="expand-donations"> [+] </span></p>
+	<% end %>
+	<hr />
+	<div class="faq-donations <%= 'show' if params[:donations] != nil%>">
+		<div class="faq-leftside">
+			<p><span>What will happen to my donation of $5?</span></p>
+			<p>It will go into in a Paypal account registered to The K
+			Network, a 501(c)3 non-profit. It will sit there
+			unspent until there is a mandate for the use of those
+			resources.
+			</p>
+			<p>Your $5 donation will be linked to your location, and
+			totals of all the locations will be listed. So if there is
+			grassroots support for this kind of initiative in a
+			single location, people will be connected and
+			resources will be collected.
+			</p>
+			<p>In addition, The Knowledge Corps will also be keep-
+			ing track of the collected resources of a larger geog-
+			raphy, say a school district, a county, or a state /
+			province. This will allow the larger community of
+			people to pool “money where your mouth is”
+			resources to encourage larger top-down change. We
+			don’t anticipate any results from this in the first 12-18
+			months of this project, but it is one of the stated
+			goals. You are donating to both a local cause and
+			also a larger initiative for change.
+			</p>
+
+			<p><span>What if minimum funding levels for my school / city / school district are not met?</span></p>
+			<p>Some fundraising websites are one project = one source of funds, go or no go with a deadline (e.g. 30, 45, 90 days). The Knowledge Corps is different. We are a platform to develop community support for bringing innovation to your school. This may take months or years, depending on all the stakeholders involved in the process. But every time $5 is donated and one more “money where your mouth is” person joins the Corps, the support for education innovation in that community goes up.
+			</p>
+			<p> Some locations may take off like a rocket and reach-
+			ing funding levels within days, weeks or months.
+			Others may be a slow burn. So if a minimum funding
+			level is not met, the money sits and grows, indefi-
+			nitely, until such a time where minimum funding
+			levels are met.
+			</p>
+		</div>
+
+		<div class="faq-rightside">
+			<p><span>Is there any way of getting my money back?</span></p>
+			<p>Yes. All members of The Corps can request to have
+			their money sent back at any time. As of today you
+			will have to email thecorps@theknetwork.org. In the
+			near future, each member of The Corps will have a
+			“My Account” page where you can request this more easily.
+			</p>
+			<p><span>Is my donation tax-deductible?</span></p>
+			<p>Your donation is a 100% tax deductible donation to a
+			501(c) non-profit for which you get immediate tax
+			benefits. In addition to those tax benefits, you may
+			get other benefits (e.g. reaching a funding level and
+			having services delivered to your school or commu-
+			nity). But in effect you are donating to a general pool
+			of funds from which benefits will be conferred, not
+			pledging funds to a specific project which will be
+			paid for by those donations.
+			</p>
+			<p>Note: This structure may change in the future, but
+			this is how it exists today.
+			</p>
+			<p><span>Is this is a legitimate and “positive benefit for the community” good-faith effort?</span></p>
+			<p>The K Network is a registered 501(c)3 non-profit with
+			tax ID 45-5167493. The K Network is spending tens of
+			thousands of dollars a month building a platform for
+			social and peer to peer teaching and learning. Our
+			existing web-based software turns Khan Academy
+			from a single person experience (learn the material
+			by yourself ) into a Group learning experience – you
+			can create a team and conquer the Khan knowledge
+			map with other people, bringing all the positive
+			group dynamics of being on a soccer team... into the Khan Academy experience.
+			</p>
+			<p>So yes, The K Network is a bona-fide non-profit. The Knowledge Corps is a division of The K Network to allow us to reach out to and start building relationships with communities, potential users, influencers in educations, and finally people who want to support education innovation, both small and large. We want to build these relationships to accomplish our larger goals and deliver on The K Network’s mission which is to empower learners worldwide to take control of their education for free.
+			</p>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<a name="projects">&nbsp;</a>
+	<% if params[:projects] != nil then %>
+		<p class="faq-header">FAQ on<span> Projects</span><span class="expander" id="expand-projects"> [-] </span></p>
+	<% else %>
+		<p class="faq-header">FAQ on<span> Projects</span><span class="expander" id="expand-projects"> [+] </span></p>
+	<% end %>
+	<hr />
+	<div class="faq-projects <%= 'show' if params[:projects] != nil%>">
+		<div class="faq-leftside">
+			<p><span>What are the donations being used for?</span></p>
+			<p>The Knowledge Corps currently has one project for donations: Project #1. As The Knowledge Corps grows and develops a wider user base, more projects will be added.
+			</p>
+			<p><span>What is Project #1?</span></p>
+			<p>Project #1 is to bring Khan Academy into your class-
+			room, school or school district. For funding levels of
+			$500, $1250, and $4000, a “Khan in the classroom”
+			expert will work with 1 teacher, a group of up to 5
+			teachers or an entire school respectively to under-
+			stand better how to implement Khan Academy in the
+			classroom.
+			</p>
+		</div>
+		<div class="faq-rightside">
+			<p><span>What about other levels of funding or individual or unique situations?
+			</span></p>
+			<p>The Knowledge Corps is about delivering happiness to its members, so if you have a suggestion for how to use funds for Project #1, e.g. for entire school districts or homeschooling situations, please email us and we will find a win-win solution.
+			</p>
+			<p><span>Who are the “Khan in the classroom” experts?</span></p>
+			<p>Right now we have one expert, Harsh Patel. His bio is on the<a href="/about"> About</a> page.</p>
+			<p>Can I just hire Harsh directly and bypass this donation / community support system?</p>
+			<p>Yes, if you have school and teacher buy-in and have secured the funding, you can bring on Harsh directly.</p>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<a name="support">&nbsp;</a>
+	<p class="faq-header">FAQ on<span> School buy-in / Support</span><span class="expander" id="expand-support"> [+] </span></p><hr>
+	<div class="faq-support">
+		<div class="faq-leftside">
+			<p><span>What if we have reached a funding goal but the local school does not want Project #1 / Khan Academy?</span></p>
+			<p>The money will sit unspent and irrevocably con- 
+			nected to your location until a suitable project is 
+			agreed upon by all stakeholders and there is buy-in 
+			from all sides. 
+			</p>
+			<p><span>Why not use the Kickstarter model of one project = one source of funds, go or no go?</span></p>
+			<p>Currently, there is no vehicle to allow interested
+			parents, students and community members to vote
+			or have the resources to advance innovation in their
+			local school system. The Knowledge Corps is that
+			vehicle.
+			</p>
+			<p>The Kickstarter model doesn’t work here because The Knowledge Corps is trying to accomplish two things:
+			</p>
+			<p>A) Finding resources for implementation
+			</p>
+			<p>B) Building grassroots support to encourage buy-in from schools and districts
+			</p>
+			<p>In Kickstarter projects, all parties already have buy-in. The filmmaker wants the film to be made. The video game company is ready to make the game. The
+			</p>
+		</div>
+		<div class="faq-rightside">
+			<p>digital watch company is prepared to build 85,000 watches.</p>
+			<p>With innovation-based initiatives for schools and
+			school district, in some cases there is an inherent
+			resistance to change, and in other cases there needs
+			to be validation before the decision maker (e.g. the
+			school, district or province / state) signs off.
+			</p>
+			<p>Thus, the idea of the Knowledge Corps is that in
+			addition to simply finding the resources a la Kick-
+			starter, something else must happen: buy-in from all
+			the stakeholders.
+			</p>
+			<p>Having Corps members make a $5 donation is the
+			difference between a simply signing a petition and a
+			creating a “money where your mouth is” petition. The Knowledge Corps will allow the community to have more of a say in the innovation decisions by a school or school district.
+			</p>
+			<p>Because of this structure, this process may happen quickly or it may take months or even years. But as more and more people in a single geography join the Corps and donate $5, both the resources available and the grassroots support will go up, increasing the chance that there will be movement and projects will be implemented.
+			</p>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<a name="interested">&nbsp;</a>	
+	<p class="faq-header">FAQ on<span> “I’m an interested parent / student / teacher”</span><span class="expander" id="expand-interested"> [+] </span></p><hr>
+	<div class="faq-interested">
+		<div class="faq-leftside">
+			<p><span>I’m an interested parent – what can I do?</span></p>
+			<p>As a parent, you can both join the Corps with a $5
+			donation and spread the word to build support in
+			your local community (and to friends in other com-
+			munities).
+			</p>
+			<p><span>I’m an interested student – what can I do?</span></p>
+			<p>As a student, you can both join the Corps with a $5
+			donation and spread the word to build support in
+			your local community (and to friends in other com-
+			munities).
+			</p>
+			<p><span>I’m an interested teacher – what can I do?</span></p>
+			<p>As a teacher, you can both join the Corps with a $5
+			donation and spread the word to build support in
+			your local community (and to friends in other com-
+			</p>	
+		</div>
+		<div class="faq-rightside">
+			<p>munities). You can also let us know via email if you,
+			your school or your district are open to benefitting
+			from Project #1 (Bringing Khan Academy into the
+			classroom) at thecorps@theknetwork.org.
+			</p>
+			<p><span>I’m an interested school administrator – what can I do?</span></p>
+			<p>As an administrator, you can both join the Corps with
+			a $5 donation and spread the word to build support
+			in your local community (and to friends in other
+			communities). You can also let us know via email if
+			your school or your district are open to benefitting
+			from Project #1 (Bringing Khan Academy into the
+			classroom) at thecorps@theknetwork.org.
+			</p>
+		</div>
+	</div>
+</div>
